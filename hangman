@@ -1,0 +1,12 @@
+def isWordGuessed(secretWord, lettersGuessed):
+    guess=[]
+    for char in lettersGuessed:
+        if char in secretWord:
+            guess.append(char)
+        if len(guess)==len(secretWord):
+            return True
+        else:
+            return False
+#using secretWord='todd'
+#and lettersGuessed=['f','t','o','d','d']
+
